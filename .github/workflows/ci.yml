@@ -28,17 +28,19 @@ jobs:
 
       - name: Build Qt application
         run: |
+          export PATH="/ucrt64/bin:$PATH"
           mkdir -p build/app
           cd build/app
-          /ucrt64/bin/qmake.exe ../../CheckOut.pro
-          /ucrt64/bin/mingw32-make.exe -j"$(nproc)"
+          qmake-qt5.exe ../../CheckOut.pro
+          mingw32-make.exe -j"$(nproc)"
 
       - name: Build unit tests
         run: |
+          export PATH="/ucrt64/bin:$PATH"
           mkdir -p build/tests
           cd build/tests
-          /ucrt64/bin/qmake.exe "../../unit test/CheckOutTests.pro"
-          /ucrt64/bin/mingw32-make.exe -j"$(nproc)"
+          qmake-qt5.exe "../../unit test/CheckOutTests.pro"
+          mingw32-make.exe -j"$(nproc)"
 
       - name: Run unit tests
         run: |
