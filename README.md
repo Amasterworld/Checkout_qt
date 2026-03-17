@@ -4,6 +4,7 @@
 <img width="359" alt="About" src="https://user-images.githubusercontent.com/73497298/177056165-ebf867e4-5e01-4690-9bdd-14d18a22fa56.png">
 
 <img width="619" alt="Test_case" src="https://user-images.githubusercontent.com/73497298/177056131-87dcd957-29c4-4147-8580-c0317d6718be.png">
+<<<<<<< HEAD
 
 ## CI
 
@@ -17,3 +18,5 @@ The workflow runs on Windows and does the following:
 - runs the unit-test executable
 
 If you push this project to GitHub, the workflow will run automatically on every push and pull request.
+=======
+>>>>>>> 6799f4ae25297048bce00ca51bea490859e0e3b4
